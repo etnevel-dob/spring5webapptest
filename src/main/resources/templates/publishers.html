@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring5Webapp - Publisher List</title>
+</head>
+<body>
+<h1>Publisher List</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+    </tr>
+    <tr th:each="publisher : ${publishers}">
+        <td th:text="${publisher.name}">Name</td>
+        <td th:text="${publisher.address}">Address</td>
+    </tr>
+</table>
+
+</body>
+</html>
